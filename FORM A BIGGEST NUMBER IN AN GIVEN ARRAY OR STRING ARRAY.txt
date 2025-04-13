@@ -10,7 +10,9 @@ public class function{
 		}
 		for(int i=0;i<=m.length-1;i++) {
 			for(int j=i+1;j<=m.length-1;j++) {
-				if(m[i].compareTo(m[j])<=1) {
+                                     String order1=m[i]+m[j];
+                                     String order2=m[j]+m[i];
+			        	if(order1.compareTo(order2)<1) {
 					String t=m[i];
 					m[i]=m[j];
 					m[j]=t;
@@ -35,7 +37,9 @@ public class function{
 			
 			for(int i=0;i<=input.length-1;i++) {
 				for(int j=i+1;j<=input.length-1;j++) {
-					if(input[i].compareTo(input[j])<=1) {
+                                        String order1=input[i]+input[j];
+                                     String order2=input[j]+input[i];
+					if(order1.compareTo(order2)<1) {
 						String t=input[i];
 						input[i]=input[j];
 						input[j]=t;
